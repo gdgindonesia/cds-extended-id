@@ -12,13 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dark-mode.css">
     <link rel="stylesheet" href="style.css">
 
     <title>Chrome Dev Summit Extended 2020 - Chapter Indonesia</title>
 </head>
 
-<body class="mt-5">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+<body class="mt-5 bg-white">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="https://developer.chrome.com/devsummit/assets/site-logo-5b1107ca.png" width="40">
@@ -26,24 +27,30 @@
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="fa fa-bars"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse bg-white" id="navbarNavAltMarkup">
                 <div class="navbar-nav d-none d-md-block">
                     <a class="nav-item btn btn-primary rounded-button" href="https://google.com/"><i
                             class="fa fa-share-square"></i> Register Now</a>
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link text-secondary" href="index.html">Home</a>
                     <a class="nav-item nav-link active" href="schedule.html">Schedule <span
                             class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="speakers.html">Speakers</a>
+                    <a class="nav-item nav-link text-secondary" href="speakers.html">Speakers</a>
+                </div>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="darkSwitch">
+                        <input type="checkbox" id="darkSwitch" />
+                        <div class="slider round"></div>
+                    </label>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section id="schedule" class="pt-5">
+    <section id="schedule" class="pt-4">
         <div class="jumbotron jumbotron-fluid bg-white">
             <div class="container">
                 <div class="row">
@@ -71,93 +78,39 @@
                     </ul>
                 </div>
             </div>
+            <br>
             <div class="row">
                 <div class="col">
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                             aria-labelledby="pills-home-tab">
-                            <div class="row pb-2">
-                                <div class="col-md-2">
-                                    <h5 class="text-muted">13.00 WIB</h5>
+                            <div class="row pb-2 ml-auto">
+                                <div class="col-md-2 align-self-center">
+                                    <h6 class="text-muted">13.00 WIB</h6>
                                 </div>
                                 <div class="col-md-10">
-                                    <div class="card">
+                                    <div class="card schedule">
                                         <div class="card-body">
-                                            <h4>Dive Deep NLP for Recognizing Sign Language</h4>
-                                            <span class="badge badge-pill badge-primary">Machine Learning</span>
-                                            <hr>
-                                            <div class="inline-block text-sm p-2 mr-4 flex">
-                                                <div class="img-container w-16 h-16 flex-shrink-0 mr-4">
-                                                    <img src="http://placehold.it/64x64"
-                                                        class="float-left rounded-circle">
-                                                </div>
-                                                <div class="flex-shrink">
-                                                    <p>
-                                                        Muh Isfhani Ghiath
-                                                        <br>
-                                                        <span class="text-muted">Sr. Software Engineer -
-                                                            Tokopedia</span>
-                                                    </p>
-                                                </div>
-                                            </div>
+                                            <h5 class="card-title">Day 2 Recap</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Dev Summit</h6>
+                                            <a target="_blank" href="https://www.youtube.com/watch?v=TOY8paDyv74"
+                                                class="card-link">Full Video</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <hr class="my-4 pb-2">
-                            <div class="row pb-2">
-                                <div class="col-md-2">
-                                    <h5 class="text-muted">13.00 WIB</h5>
+                            <div class="row pb-2 ml-auto">
+                                <div class="col-md-2 align-self-center">
+                                    <h6 class="text-muted">13.00 WIB</h6>
                                 </div>
                                 <div class="col-md-10">
-                                    <div class="card">
+                                    <div class="card schedule">
                                         <div class="card-body">
-                                            <h4>Dive Deep NLP for Recognizing Sign Language</h4>
-                                            <span class="badge badge-pill badge-success">Web</span>
-                                            <hr>
-                                            <div class="inline-block text-sm p-2 mr-4 flex">
-                                                <div class="img-container w-16 h-16 flex-shrink-0 mr-4">
-                                                    <img src="http://placehold.it/64x64"
-                                                        class="float-left rounded-circle">
-                                                </div>
-                                                <div class="flex-shrink">
-                                                    <p>
-                                                        Muh Isfhani Ghiath
-                                                        <br>
-                                                        <span class="text-muted">Sr. Software Engineer -
-                                                            Tokopedia</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="my-4 pb-2">
-                            <div class="row pb-2">
-                                <div class="col-md-2">
-                                    <h5 class="text-muted">13.00 WIB</h5>
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h4>Dive Deep NLP for Recognizing Sign Language</h4>
-                                            <span class="badge badge-pill badge-success">Web</span>
-                                            <hr>
-                                            <div class="inline-block text-sm p-2 mr-4 flex">
-                                                <div class="img-container w-16 h-16 flex-shrink-0 mr-4">
-                                                    <img src="http://placehold.it/64x64"
-                                                        class="float-left rounded-circle">
-                                                </div>
-                                                <div class="flex-shrink">
-                                                    <p>
-                                                        Muh Isfhani Ghiath
-                                                        <br>
-                                                        <span class="text-muted">Sr. Software Engineer -
-                                                            Tokopedia</span>
-                                                    </p>
-                                                </div>
-                                            </div>
+                                            <h5 class="card-title">Day 2 Recap</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Dev Summit</h6>
+                                            <a target="_blank" href="https://www.youtube.com/watch?v=TOY8paDyv74"
+                                                class="card-link">Full Video</a>
                                         </div>
                                     </div>
                                 </div>
@@ -188,7 +141,7 @@
     <footer class="text-lg-start">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 align-self-center text-logo text-muted">
+                <div class="col-md-8 align-self-center text-logo text-dark">
                     <img src="https://devfestindonesia.com/_nuxt/img/logo.444364e.png" alt="GDG Indonesia" width="80px">
                     GDG Indonesia
                 </div>
@@ -233,6 +186,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://coliff.github.io/dark-mode-switch/dark-mode-switch.min.js"></script>
 </body>
 
 </html>

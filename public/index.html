@@ -36,12 +36,14 @@
         </div>
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="schedule.html">Schedule</a>
-          <a class="nav-item nav-link" href="speakers.html">Speakers</a>
+          <a class="nav-item nav-link text-secondary" href="schedule.html">Schedule</a>
+          <a class="nav-item nav-link text-secondary" href="speakers.html">Speakers</a>
         </div>
-        <div class="custom-control custom-switch">
-          <input type="checkbox" class="custom-control-input" id="darkSwitch">
-          <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="darkSwitch">
+            <input type="checkbox" id="darkSwitch" />
+            <div class="slider round"></div>
+          </label>
         </div>
       </div>
     </div>
@@ -51,9 +53,11 @@
     <div class="container align-self-center">
       <div class="row">
         <div class="col-md-6 my-auto order-2">
-          <p class="cds-subtitle badge badge-secondary">GDG Indonesia</p>
+          <p class="cds-subtitle badge badge-success">GDG Indonesia</p>
           <h1 class="cds-highlight">chrome://extended</h1>
-          <p class="cds-message text-muted">Chrome Dev Summit brings together thousands of developers globally for the
+          <p class="cds-message text-secondary">Chrome Dev Summit Extended brings together thousands of developers
+            globally for
+            the
             largest
             virtual weekend of community-led technical learning and a shared passion for Google technologies on <b>Jan
               15</b>.
@@ -64,8 +68,9 @@
         <div class="col-md-6 ml-auto order-1">
           <div class="row">
             <div class="col">
-              <iframe src="https://www.youtube.com/embed/CNhrQH0HVNU" width="100%" height="270px"
-                frameborder="0"></iframe>
+              <div class="youtube" data-embed="CNhrQH0HVNU">
+                <div class="play-button"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -73,18 +78,39 @@
     </div>
   </div>
 
-  <hr class="my-2">
-
-  <section id="hackathon" class="pt-5 pb-5">
+  <section id="hackathon" class="pt-3 pb-5">
     <div class="container">
-      <div class="card card-overview">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-6 align-self-center">
-              <h3 class="headline-event-tight">Hack<span class="headline-event">athon</span></h3>
-              <div class="cds-message text-muted">
+      <div class="row">
+        <div class="col-md">
+          <div class="card schedule mb-4">
+            <div class="card-body">
+              <h4><b><span class="chip-chrome">chrome://</span>hackathon</b></h4>
+              <br>
+              <p class="cds-message text-muted">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium non.
-              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card schedule mb-4">
+            <div class="card-body">
+              <h4><b><span class="chip-chrome">chrome://</span>talks</b></h4>
+              <br>
+              <p class="cds-message text-muted">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium non.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card schedule mb-4">
+            <div class="card-body">
+              <h4><b><span class="chip-chrome">chrome://</span>hours</b></h4>
+              <br>
+              <p class="cds-message text-muted">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium non.
+              </p>
             </div>
           </div>
         </div>
@@ -96,7 +122,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h3>Dev Summit</h3>
+          <h3>Dev Summit Recap</h3>
           <br>
         </div>
       </div>
@@ -104,24 +130,24 @@
       <div class="row">
         <div class="col-md">
           <div class="card cds-content mb-4">
-            <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SYdr7KjrHjo"></iframe>
+            <div class="youtube" data-embed="SYdr7KjrHjo">
+              <div class="play-button"></div>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Day 1 Recap</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Dev Summit</h6>
+              <h5 class="card-title text-dark">Day 1 Recap</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Main Topic, Performance and Privacy</h6>
               <a target="_blank" href="https://www.youtube.com/watch?v=SYdr7KjrHjo" class="card-link">Full Video</a>
             </div>
           </div>
         </div>
         <div class="col-md">
           <div class="card cds-content mb-4">
-            <div class="embed-responsive embed-responsive-21by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TOY8paDyv74"></iframe>
+            <div class="youtube" data-embed="TOY8paDyv74">
+              <div class="play-button"></div>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Day 2 Recap</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Dev Summit</h6>
+              <h5 class="card-title text-dark">Day 2 Recap</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Design, UX, and PWA</h6>
               <a target="_blank" href="https://www.youtube.com/watch?v=TOY8paDyv74" class="card-link">Full Video</a>
             </div>
           </div>
@@ -133,7 +159,7 @@
   <footer class="text-lg-start">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 align-self-center text-logo text-muted">
+        <div class="col-md-8 align-self-center text-logo text-dark">
           <img src="https://devfestindonesia.com/_nuxt/img/logo.444364e.png" alt="GDG Indonesia" width="80px">
           GDG Indonesia
         </div>
@@ -177,6 +203,7 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="https://coliff.github.io/dark-mode-switch/dark-mode-switch.min.js"></script>
+  <script src="youtube.js"></script>
 </body>
 
 </html>
