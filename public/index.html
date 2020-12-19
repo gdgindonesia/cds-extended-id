@@ -12,13 +12,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="dark-mode.css">
   <link rel="stylesheet" href="style.css">
 
   <title>Chrome Dev Summit Extended 2020 - Chapter Indonesia</title>
 </head>
 
-<body class="mt-5">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+<body class="mt-5 bg-white">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="https://developer.chrome.com/devsummit/assets/site-logo-5b1107ca.png" width="40">
@@ -26,9 +27,9 @@
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="fa fa-bars"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse bg-white" id="navbarNavAltMarkup">
         <div class="navbar-nav d-none d-md-block">
           <a class="nav-item btn btn-primary rounded-button" href="https://google.com/"><i
               class="fa fa-share-square"></i> Register Now</a>
@@ -38,16 +39,20 @@
           <a class="nav-item nav-link" href="schedule.html">Schedule</a>
           <a class="nav-item nav-link" href="speakers.html">Speakers</a>
         </div>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="darkSwitch">
+          <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+        </div>
       </div>
     </div>
   </nav>
 
-  <div class="jumbotron home-overview d-flex">
+  <div class="jumbotron bg-white home-overview d-flex">
     <div class="container align-self-center">
       <div class="row">
         <div class="col-md-6 my-auto order-2">
           <p class="cds-subtitle badge badge-secondary">GDG Indonesia</p>
-          <h1 class="cds-highlight text-dark">chrome://extended</h1>
+          <h1 class="cds-highlight">chrome://extended</h1>
           <p class="cds-message text-muted">Chrome Dev Summit brings together thousands of developers globally for the
             largest
             virtual weekend of community-led technical learning and a shared passion for Google technologies on <b>Jan
@@ -171,6 +176,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="https://coliff.github.io/dark-mode-switch/dark-mode-switch.min.js"></script>
 </body>
 
 </html>
