@@ -65,7 +65,10 @@
   }
 
   [data-theme="dark"] .nav-tabs .nav-link:hover {
-      border: transparent;
+      border-top-color: #111;
+      border-left-color: #111;
+      border-right-color: #111;
+      border-bottom: 1px solid #007bff;
   }
 
   [data-theme="dark"] .navbar-light .navbar-toggler {

@@ -66,6 +66,11 @@ iframe {
     line-height: 2.5;
 }
 
+.speakers-small {
+    display: inline-block;
+    margin-left: 4px;
+}
+
 .text-logo {
     font-size: 25px;
 }
