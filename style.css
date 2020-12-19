@@ -1,0 +1,153 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: white !important;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.navbar {
+    padding: 16px;
+    background-color: white !important;
+}
+
+.rounded-button {
+    border-radius: 40px;
+}
+
+.jumbotron.home-overview {
+    background-color: white;
+    width: 100%;
+    height: 70vh;
+    padding: 0;
+}
+
+.cds-subtitle {
+    color: white;
+    font-size: 0.9375rem;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.cds-highlight {
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.cds-message {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.cds-message.schedule {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.child-menu {
+    text-align: right;
+    line-height: 2.5;
+}
+
+.text-logo {
+    font-size: 25px;
+}
+
+.headline-event-tight {
+    font-family: 'Domine', serif;
+    font-weight: 500;
+}
+
+.headline-event {
+    font-family: 'Domine', serif;
+    font-weight: 700;
+}
+
+.card-overview:hover {
+    box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.185);
+}
+
+.card.cds-content {
+    box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.185);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #007bff;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    color: rgba(128, 128, 128, 0.589);
+}
+
+@media (max-width: 992px) {
+
+    .text-logo {
+        padding-bottom: 30px;
+    }
+
+    .child-menu {
+        text-align: left;
+    }
+
+    footer {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    .cds-highlight {
+        font-size: 30px;
+    }
+
+    .cds-message {
+        font-size: 1rem;
+    }
+
+    .jumbotron.home-overview {
+        height: 80vh;
+    }
+
+    .navbar-toggler {
+        border: none;
+        float: left;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 80px; /* adjust to height of navbar */
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        width: 75%;
+        height: 100%;
+        background-color: white;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 200ms ease-in-out;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 300ms ease-in-out;
+    }
+
+}
