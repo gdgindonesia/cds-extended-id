@@ -9,6 +9,13 @@ footer {
     margin-bottom: 30px;
 }
 
+iframe {
+    background-color: rgba(75, 75, 75, 0.445);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
 .navbar {
     padding: 16px;
     background-color: white !important;
