@@ -1,6 +1,10 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
+}
+
+.small-paragraph {
+    font-size: 16px !important;
 }
 
 footer {
@@ -32,6 +36,7 @@ iframe {
     width: 100%;
     height: 70vh;
     padding: 0;
+    margin-bottom: 0 !important;
 }
 
 .cds-subtitle {
@@ -91,6 +96,32 @@ iframe {
 
 .card.cds-content {
     box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.185);
+}
+
+.card-background {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-background::before {
+    content: "";
+    background-color: rgb(241, 241, 241);
+    background-image: url('https://developer.chrome.com/devsummit/assets/squiggles/banner-2e4e7af6.avif');
+    background-repeat: repeat;
+    background-size: 600px;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+
+.btn {
+    position: relative;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {

@@ -7,6 +7,10 @@
       color: #007bff !important;
   }
 
+  [data-theme="dark"] .text-muted {
+      color: #aeb1b3 !important;
+  }
+
   [data-theme="dark"] hr {
       border-color: #ffffff11 !important;
   }
