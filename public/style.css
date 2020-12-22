@@ -98,26 +98,9 @@ iframe {
     box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.185);
 }
 
-.card-background {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-background::before {
-    content: "";
-    background-color: rgb(241, 241, 241);
-    background-image: url('https://developer.chrome.com/devsummit/assets/squiggles/banner-2e4e7af6.avif');
-    background-repeat: repeat;
-    background-size: 600px;
-    opacity: 0.5;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.2;
+.card-img-top.placeholder {
+    background-color: gray;
+    object-fit: cover;
 }
 
 .btn {
