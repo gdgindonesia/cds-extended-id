@@ -39,8 +39,7 @@
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link text-secondary" href="index.html">Home</a>
                     <a class="nav-item nav-link text-secondary" href="schedule.html">Schedule</a>
-                    <a class="nav-item nav-link active" href="speakers.html">Speakers <span
-                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link text-secondary" href="speakers.html">Speakers</a>
                 </div>
                 <div class="theme-switch-wrapper">
                     <label class="theme-switch" for="darkSwitch">
@@ -57,7 +56,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 align-self-center">
-                        <h2 class="text-secondary">Speakers</h2>
+                        <h2 class="text-secondary">Hackathon FAQ</h2>
                     </div>
                 </div>
             </div>
@@ -65,34 +64,20 @@
     </section>
 
     <section id="content" class="pb-5">
-        <div id="speakers">
-            <div class="container">
-                <div class="card-columns">
-                    <div v-for="speaker in speakers">
-                        <div class="card schedule mb-4">
-                            <img :src="speaker.avatar" class="card-img-top placeholder">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ speaker.name }}</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">{{ speaker.title }}</h6>
-                                <a :href="speaker.linkedin" class="card-link" v-if="speaker.linkedin !== ''"><i
-                                        class="fa fa-linkedin"></i></a>
-                                <a :href="speaker.twitter" class="card-link" v-if="speaker.twitter !== ''"><i
-                                        class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card schedule mb-4" v-if="!speakers || !speakers.length">
-                        <div class="card-body">
-                            <h5 class="card-title">Loading</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">...</h6>
-                        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div v-for="faq in faq">
+                        <h5>{{ faq.question }}</h5>
+                        <p class="text-muted">{{ faq.answer }}</p>
+                        <br>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="text-lg-start">
+    <footer class=" text-lg-start">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 align-self-center text-logo text-dark">
@@ -144,14 +129,14 @@
     <script>
         new Vue({
             data: {
-                speakers: '',
+                faq: '',
             },
-            el: '#speakers',
+            el: '#content',
             methods: {
                 fetch: function () {
-                    axios.get(`https://gist.githubusercontent.com/isfaaghyth/236b0615a14b37692a80a480ce201374/raw/e6cf618f7d172177e56d2b2ef7dda6d272c8a5cd/speakers.json`)
+                    axios.get(`https://gist.githubusercontent.com/isfaaghyth/236b0615a14b37692a80a480ce201374/raw/ecd40dd785f39dd6b9c6e71eb60a28920a874540/hackathon-faq.json`)
                         .then(response => {
-                            this.speakers = response.data.speakers;
+                            this.faq = response.data.faq;
                         })
                 }
             },
