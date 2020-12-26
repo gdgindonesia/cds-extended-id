@@ -135,7 +135,7 @@
             el: '#content',
             methods: {
                 fetch: function () {
-                    axios.get(`https://gist.githubusercontent.com/isfaaghyth/236b0615a14b37692a80a480ce201374/raw/ecd40dd785f39dd6b9c6e71eb60a28920a874540/hackathon-faq.json`)
+                    axios.get(`https://raw.githubusercontent.com/gdgindonesia/cds-extended-id/main/data/hackathon-faq.json`)
                         .then(response => {
                             this.faq = response.data.faq;
                         })

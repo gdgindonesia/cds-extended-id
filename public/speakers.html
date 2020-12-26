@@ -150,7 +150,7 @@
             el: '#speakers',
             methods: {
                 fetch: function () {
-                    axios.get(`https://gist.githubusercontent.com/isfaaghyth/236b0615a14b37692a80a480ce201374/raw/e6cf618f7d172177e56d2b2ef7dda6d272c8a5cd/speakers.json`)
+                    axios.get(`https://raw.githubusercontent.com/gdgindonesia/cds-extended-id/main/data/speakers.json`)
                         .then(response => {
                             this.speakers = response.data.speakers;
                         })

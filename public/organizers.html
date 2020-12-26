@@ -141,7 +141,7 @@
             el: '#organizers',
             methods: {
                 fetch: function () {
-                    axios.get(`https://gist.githubusercontent.com/isfaaghyth/236b0615a14b37692a80a480ce201374/raw/c6a458621c3ef86d89b1245ae0e472a46986b3ee/organizers.json`)
+                    axios.get(`https://raw.githubusercontent.com/gdgindonesia/cds-extended-id/main/data/organizers.json`)
                         .then(response => {
                             this.organizers = response.data.organizers;
                         })
