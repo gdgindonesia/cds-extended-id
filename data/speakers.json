@@ -11,8 +11,22 @@
             "name": "Riza Fahmi",
             "title": "Co-Founder, Hacktiv8",
             "linkedin": "https://id.linkedin.com/in/rizafahmi",
-            "twitter": "",
+            "twitter": "https://twitter.com/rizafahmi22",
             "avatar": "https://avatars2.githubusercontent.com/u/1147918?s=460&u=5efa9629fc1a6cd252677b105765d571b20ea732&v=4"
+        },
+        {
+            "name": "Friska Nataniel",
+            "title": "Associate Research and Development, Blibli",
+            "linkedin": "https://id.linkedin.com/in/friskanataniel/",
+            "twitter": "",
+            "avatar": "https://drive.google.com/file/d/1Ida4b4HFI3DUUZaYjEBr0nObLi2UTgHE/view"
+        },
+        {
+            "name": "Irfan Maulana",
+            "title": "Principal Engineer, Tokopedia",
+            "linkedin": "https://id.linkedin.com/in/mazipan/",
+            "twitter": "https://twitter.com/Maz_Ipan",
+            "avatar": "https://github.com/mazipan/talks/blob/master/photo/2019-08-mazipan.jpg"
         }
     ]
 }
